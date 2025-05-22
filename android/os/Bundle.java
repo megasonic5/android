@@ -15,6 +15,6 @@ public class Bundle {
 
     public int getInt(String key) {
         Integer value = hashMap.get(key);
-        return value != null ? value : 0; // Devuelve 0 si no existe la clave
+        return value != null ? value : 0;
     }
 }
