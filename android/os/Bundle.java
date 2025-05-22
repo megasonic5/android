@@ -1,16 +1,20 @@
 package android.os;
 
 import java.util.HashMap;
-import java.util.Set;
 
 public class Bundle {
     private HashMap<String, Integer> hashMap;
+
+    public Bundle() {
+        hashMap = new HashMap<>();
+    }
 
     public void putInt(String key, int value) {
         hashMap.put(key, value);
     }
 
     public int getInt(String key) {
-        return hashMap.get(key);
+        Integer value = hashMap.get(key);
+        return value != null ? value : 0; // Devuelve 0 si no existe la clave
     }
-}
+            }
