@@ -17,4 +17,4 @@ public class Bundle {
         Integer value = hashMap.get(key);
         return value != null ? value : 0; // Devuelve 0 si no existe la clave
     }
-            }
+}
